@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: Eclipse启动报错：org.eclipse.e4.core.di.InjectionException: java.lang.NoClassDefFoundError: javax/annotation/PostConstruct
+title: Eclipse启动报错：org.eclipse.e4.core.di.InjectionException
 tagline: by 沉默王二
 tag: java
 ---
