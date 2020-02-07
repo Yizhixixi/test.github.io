@@ -19,7 +19,7 @@ tag: java
 
 在一个月黑风高的夜晚，我思前想后，觉得再也不能这么蹉跎下去了。于是痛下决心，准备通过输出的方式倒逼输入，以此来修炼自己的内功，从而进阶成为一名真正意义上的大神。与此同时，希望这些文章能够帮助到更多的读者，让大家在学习的路上不再寂寞、空虚和冷。
 
-![](http://www.itwanger.com/assets/images/2020/01/print-object-01.png)
+![](http://www.itwanger.com/assets/images/2020/02/print-object-01.png)
 
 为了更好的输入，我选择 Stack Overflow 作为战斗的第一线，毕竟很多前辈都在强烈推荐。本篇文章，我们来探讨一下如何优雅地打印一个Java对象。
 
@@ -108,12 +108,12 @@ public String toString() {
 
 大致的意思就是，如果是一个数组的话，Class 名的前面会有一个或者多个英文中括号“[”，表示数组的维度（一维数组为一个“[”，二维数组为两个“[”），然后再紧跟一个元素的类型首字母。
 
-![](http://www.itwanger.com/assets/images/2020/01/print-object-02.png)
+![](http://www.itwanger.com/assets/images/2020/02/print-object-02.png)
 
 这就是为什么对象数组的前缀是“[L”的原因。是不是有一种恍然大悟的感觉？
 
-![](http://www.itwanger.com/assets/images/2020/01/print-object-03.png)
-       
+![](http://www.itwanger.com/assets/images/2020/02/print-object-03.png)
+
 ### 02、自定义输出
 
 如果想在打印的时候输出自己预期的结果，就必须在自定义类中重写 `toString()` 方法，来看例子。
