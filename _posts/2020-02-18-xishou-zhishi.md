@@ -20,7 +20,7 @@ tags:
 
 呵呵，一不小心又想吃后悔药了。
 
-![](http://www.itwanger.com/assets/images/2020/02/xishou-zhishi-01.gif)
+![](http://www.itwanger.com/assets/images/2020/02/xishou-zhishi-02.gif)
 
 
 我想要告诉星星的一句名言是：与其在那妄自菲薄，不如趁机敲个 Demo（不好意思，这句名言出自我口）。
