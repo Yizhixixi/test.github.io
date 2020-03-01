@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 如何快速打好Java基础？
+title: java 8 Predicate
 tagline: by 沉默王二
 tag: java
 ---
