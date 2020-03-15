@@ -133,7 +133,7 @@ Docker 让应用程序部署在软件货柜下的工作实现了自动化，借�
 
 >如果觉得文章对你有点帮助，请微信搜索「 **沉默王二** 」第一时间阅读，回复【**666**】【**1024**】更有我为你精心准备的 500G 高清教学视频（已分门别类），以及大厂技术牛人整理的面经一份。
 
-![](http://www.itwanger.com/assets/images/cmower-10.png)
+![](http://www.itwanger.com/assets/images/cmower_10.png)
 
 
 
