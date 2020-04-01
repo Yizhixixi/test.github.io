@@ -7,10 +7,10 @@
 
 # Site settings
 title:  沉默王二
-subtitle: 公号「沉默王二」，一枚有趣的程序员
+subtitle: 微信搜索「沉默王二」，关注这枚有趣的程序员
 name: 沉默王二 
 email: 983436076@qq.com
-description: 本站为沉默王二的技术分享博客。内容涵盖Java后端技术、Web前端等相关知识分享，还有有趣的程序人生等着你。
+description: 本站为沉默王二的个人博客，内容涵盖有趣的Java后端技术，还有有益的程序人生。
 keywords: 沉默王二,Java,Java教程,程序人生,程序员,前端,Web,全栈
 encoding: "utf-8"
 favicon: favicon.ico 
