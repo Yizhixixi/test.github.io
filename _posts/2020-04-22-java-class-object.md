@@ -1,6 +1,6 @@
 ---
 layout: post
-category: life
+category: java
 title: 那个小白说他还没搞懂类和对象，我一怒之下把这篇文章扔给了他
 tagline: by 沉默王二
 tags: 
