@@ -41,7 +41,7 @@ public class Test {
 
 竟然是王三，不是王二。看到这个结果，我算是彻底懵逼了。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-0f6e6585fd2dbbab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://www.itwanger.com/assets/images/2020/05/java-zhushi-02.png)
 
 那一刹那，我感觉这十来年的 Java 算是白学了。大学那会，老师说注释是不会执行的；就连《编程思想》里也说注释是不会执行的。那现在谁能告诉我这到底为什么？
 
@@ -128,7 +128,7 @@ public class Test {
 
 那这算不算是 Java 的 bug 呢？说算也不算。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-d201d87d8289123e.gif?imageMogr2/auto-orient/strip)
+![](http://www.itwanger.com/assets/images/2020/05/java-zhushi-03.gif)
 
 >因为通过允许 Java 源代码包含 Unicode 字符，可以确保在世界上任何一个区域编写的代码在其他地方执行。
 
