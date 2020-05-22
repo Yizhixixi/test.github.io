@@ -14,7 +14,7 @@ tags:
 收到问题的时候，我都惊呆了！什么年头了，还不会用 Spring Boot，大清朝早亡了啊！
 
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-01.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-01.png)
 
 没等我发牢骚，小王就紧接着说：“二哥，你先别生气，我投了 14 份简历才在三线小镇的一家小公司找到一份实习工作，不容易啊，领导给我安排了一个小活儿，就是搭一个 Spring Boot 的小项目，估计是测试我的实战能力吧。听说二哥热肠古道，我就抱着试一试的心态添加了你的好友。”
 
@@ -34,7 +34,7 @@ tags:
 
 创建一个 Spring Boot 项目非常简单，通过 Spring Initlallzr（[https://start.spring.io/](https://start.spring.io/)）就可以了。（实际上，我也只是把这个网址扔给了小王。）
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-02.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-02.png)
 
 1）第一个选项一般选择 Maven（Java 后端项目首选），Gradle 在安卓项目中用的比较多。如果还不太了解 Maven，请查看我以前写的一篇文章：[Maven 入门](http://www.itwanger.com/java/2019/10/24/maven-rumen.html)。
 
@@ -52,17 +52,17 @@ tags:
 
 最近迷上了 IDEA，所以暂时就不再使用 Eclipse 了。如果实在是不习惯 IDEA，可以选择 Spring 自己的 IDE——STS，基于 Eclipse 的。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-03.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-03.png)
 
 PS：导入的过程就省略了，请选择 Maven 就对了。
 
 等待 Maven 把所有的依赖包下载完。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-04.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-04.png)
 
 项目的目录结构图如下所示。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-05.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-05.png)
 
 1）HelloSpringBootApplication 为项目的入口，带有 `main()` 方法。我们知道，传统的 Web 项目通常需要放到 Tomcat 等容器下面启动运行，而 `main()` 方法则预示着该项目可以作为一个 jar 包直接运行——因为 Spring Boot 已经内置了 Tomcat。
 
@@ -116,19 +116,19 @@ public class HelloSpringBootApplication {
 
 接下来，我们直接运行 `HelloSpringBootApplication` 类，这样一个 Spring Boot 项目就启动成功了。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-06.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-06.png)
 
 默认端口为 8080。
 
 这时候，可以直接在 IDEA 的 Terminal 面板中测试该项目是否启动成功。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-07.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-07.png)
 
 命令行为 `curl http://localhost:8080/hello`。之所以不需要项目路径 `helloSpringBoot`，是因为默认启动的时候相当于是一个 ROOT 级别的，所以不需要根目录。
 
 curl 是一个常用的命令行工具，用来请求 Web 服务器。它的名字就是客户端（client）和 URL 的合体。curl 的功能非常强大，命令行参数多达几十种。如果运用熟练的话，完全可以取代 Postman。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-08.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-08.png)
 
 ### 05、jar 形式运行 Spring Boot 项目
 
@@ -147,26 +147,26 @@ curl 是一个常用的命令行工具，用来请求 Web 服务器。它的名�
 
 这意味着我们可以通过 maven 命令 `mvn clean package` 将 Spring Boot 项目打包成 jar 文件。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-09.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-09.png)
 
 也可以加上参数用于跳过打包时候的测试：`mvn clean package -Dmaven.test.skip`
 
 稍等片刻，就可以在 target 目录下看到对应的 jar 包。该 jar 包比起传统的 war 包更具有优势，因为不需要再单独开一个容器来跑项目了，Spring Boot 内置过了。原生的 jar 文件（.jar.original）只有不到 3 kb，非常小，因为没几行代码，但打包后 .jar 文件有 19 M，这说明 Spring Boot 帮我们做了很多肉眼看不到的工作。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-10.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-10.png)
 
 直接使用 `java -jar helloSpringBoot-0.0.1-SNAPSHOT.jar` 命令运行该 jar 包，同样可以看到 Tomcat 的启动信息。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-11.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-11.png)
 
 这次，我们使用浏览器来访问一下。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-12.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-12.png)
 
 
 也是 OK 的，这说明我们的第一个 Spring Boot 程序跑起来了。快给自己点个赞。
 
-![](http://www.itwanger.com/assets/images/2020/05/java-fuwuqi-13.png)
+![](http://www.itwanger.com/assets/images/2020/05/java-springboot-rumen-13.png)
 
 
 ### 06、鸣谢
