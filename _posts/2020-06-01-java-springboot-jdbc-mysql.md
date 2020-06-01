@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 看了这篇，我确定你已经彻底搞懂Java的继承了
+title: 被缠上了，小王问我怎么在 Spring Boot 中使用 JDBC 连接 MySQL
 tagline: by 沉默王二
 tags: 
   - java
