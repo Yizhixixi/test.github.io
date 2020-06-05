@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-01.gif)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-01.gif)
 
 七年前，我从美女很多的苏州回到美女也不少的洛阳，抱着一幅“从二线城市退居三线城市”的心态，投了不少简历，也“约谈”了不少面试官，但仅有两三个令我感到满意。其中有一位叫老马，至今还活在我的微信通讯录里。他当时扔了一个面试题把我砸懵了：“**兄弟，说说 Java 的 static 关键字吧。**”
 
@@ -76,7 +76,7 @@ System.out.println(Writer.countOfWriters);
 
 1）由于静态变量属于一个类，所以不要通过对象引用来访问，而应该直接通过类名来访问；
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-02.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-02.png)
 
 2）不需要初始化类就可以访问静态变量。
 
@@ -102,11 +102,11 @@ public static void setCountOfWriters(int countOfWriters) {
 
 如果你用过 java.lang.Math 类或者 Apache 的一些工具类（比如说 StringUtils）的话，对静态方法一定不会感动陌生。
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-03.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-03.png)
 
 Math 类的几乎所有方法都是静态的，可以直接通过类名来调用，不需要创建类的对象。
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-04.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-04.png)
 
 
 简单小结一下：
@@ -115,7 +115,7 @@ Math 类的几乎所有方法都是静态的，可以直接通过类名来调用
 
 2）抽象方法不能是静态的。
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-05.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-05.png)
 
 3）静态方法不能使用 this 和 super 关键字。
 
@@ -127,7 +127,7 @@ Math 类的几乎所有方法都是静态的，可以直接通过类名来调用
 
 7）静态方法无法直接访问成员方法和成员变量。
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-06.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-06.png)
 
 
 ### 03、静态代码块
@@ -198,7 +198,7 @@ public class Singleton {
 
 3）外部类不能声明为 static。
 
-![](http://www.itwanger.com/assets/images/2020/06/java-stati-07.png)
+![](http://www.itwanger.com/assets/images/2020/06/java-static-07.png)
 
 
 学到了吧？学到就是赚到。
