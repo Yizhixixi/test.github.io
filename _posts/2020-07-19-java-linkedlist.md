@@ -1,10 +1,10 @@
 ---
 layout: post
-category: life
+category: java
 title: 技术小菜比入坑 LinkedList，i 了 i 了
 tagline: by 沉默王二
 tags: 
-  - 程序员
+  - java
 ---
 
 >先看再点赞，给自己一点思考的时间，思考过后请毫不犹豫微信搜索【**沉默王二**】，关注这个长发飘飘却靠才华苟且的程序员。

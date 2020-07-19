@@ -1,10 +1,10 @@
 ---
 layout: post
-category: life
+category: java
 title: 31道Java核心面试题，一次性打包送给你
 tagline: by 沉默王二
 tags: 
-  - 程序员
+  - java
 ---
 
 >先看再点赞，给自己一点思考的时间，微信搜索【**沉默王二**】关注这个靠才华苟且的程序员。
