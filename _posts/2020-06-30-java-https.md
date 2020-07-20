@@ -1,10 +1,10 @@
 ---
 layout: post
-category: life
+category: java
 title: 老板急坏了，公司网站的 HTTPS 过期了
 tagline: by 沉默王二
 tags: 
-  - 程序员
+  - java
 ---
 
 端午出去玩的时候，老板打电话说公司网站的 HTTPS 过期了，访问不了（见下图），要我立马升级一下。可惜我当时没带电脑，无能为力，可把老板急坏了。

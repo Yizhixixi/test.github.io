@@ -1,10 +1,10 @@
 ---
 layout: post
-category: life
-title: 老板急坏了，公司网站的 HTTPS 过期了
+category: java
+title: 要想数组用的 6，怎能不懂 Arrays
 tagline: by 沉默王二
 tags: 
-  - 程序员
+  - java
 ---
 
 `java.util.Arrays` 类就是为数组而生的专用工具类，基本上常见的对数组的操作，Arrays 类都考虑到了，这让我由衷地觉得，是时候给该类的作者 Josh Bloch、Neal Gafter、John Rose 点个赞了。

@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 31道Java核心面试题，一次性打包送给你
+title: 万字长文，62道Java核心面试题，一次性打包送给积极向上的你
 tagline: by 沉默王二
 tags: 
   - java
@@ -12,13 +12,11 @@ tags:
 
 <!--more-->
 
->二哥，你好，找工作找了仨月，还没有找到，很焦虑，我该怎么办呢？你那有没有 Java 方面的面试题可以分享一波啊？
+二哥，你好，找工作找了仨月，还没有找到，很焦虑，我该怎么办呢？你那有没有 Java 方面的面试题可以分享一波啊？
 
 以上是读者田田给我发的私信，看完后于我心有戚戚焉啊，最近境况确实不容乐观，并非是个人的原因造成的。那，既然需要面试题，二哥就义不容辞，必须得准备一波。
 
-这次我花了一周的时间，准备了 31 道 Java 核心面试题，希望能够帮助到田田，以及其他和田田类似情况的读者朋友。
-
-（后续我打算再花一周时间，更新第二波，同样有 31 道，敬请期待）
+这次我花了两周的时间，准备了 62 道 Java 核心面试题，希望能够帮助到田田，以及其他和田田类似情况的读者朋友。
 
 ### 01、请说出 Java 14 版本中更新的重要功能
 
@@ -580,10 +578,382 @@ static 块是由 Java ClassLoader 将类加载到内存中时执行的代码块�
 
 [可能是把 Java 接口讲得最通俗的一篇文章](https://mp.weixin.qq.com/s/06d5Fk_ho4yafR83mfbWag)
 
+### 32、什么是抽象类？
+
+在 Java 中，抽象类用于创建具有某些被子类实现的默认方法的类，一个抽象类可以有没有方法体的抽象方法，也可以有和普通类一样有方法体的方法。
+
+abstract 关键字用于声明一个抽象类，抽象类无法实例化，主要用于为子类提供一个模板，子类需要覆盖抽象方法。
+
+关于抽象类更详细的内容，可以参照我之前写了另外一篇文章：
+
+[小白，你要的Java抽象类，操碎了心](https://mp.weixin.qq.com/s/yES5bPg6wbCYuBciZhPYaQ)
+
+### 33、抽象类和接口有什么区别？
+
+- 声明抽象类的关键字为 abstract，声明接口的关键字为 interface。
+- 抽象类可以有具体的方法，接口不能。
+- 一个类只能继承一个抽象类，但可以实现多个接口。
+- 接口中的变量只能是隐式的常量，抽象类中可以有任意类型的变量。
+- 如果一个抽象类有 `main()` 方法，则可以运行它；但接口不能。
+- 抽象类是对类的一种抽象，继承抽象类的类和抽象类本身是一种 is-a 的关系。
+- 接口是对类的某种行为的一种抽象，接口和类之间并没有很强的关联关系，所有的类都可以实现 Serializable 接口，从而具有序列化的功能。
+
+### 34、一个接口可以实现或者继承另外一个接口吗？
+
+接口不能实现另外一个接口，但可以继承一个接口。
+
+![](http://www.itwanger.com/assets/images/2020/07/java-mianshiti-62-01.png)
+
+因为接口中不能有具体的方法，所以不会出现菱形问题，所以我们可以在一个接口中继承多个接口。
+
+```java
+public interface C extends A,B{
+}
+```
+
+从 Java 8 开始，接口可以有默认方法，所以当多个接口中存在相同的默认方法时，需要在实现接口的类中提供该方法的实现。
+
+### 35、什么是标记接口？
+
+标记接口是一个空的接口，没有任何方法，用于强制实现类中的某些功能。比较出名的标记接口有 Serializable 接口、Cloneable 接口。
+
+关于 Serializable 接口更详细的内容，可以参照我之前写了另外一篇文章：
+
+[Java Serializable：明明就一个空的接口嘛](http://www.itwanger.com/java/2019/11/14/java-serializable.html)
+
+### 36、什么是包装器类？
+
+包装器类是 Java 中八种基本数据类型的对象表示形式，所有的包装器类都是不可变的，并且是 final 的。通过装箱和拆箱，可以将八种基本数据类型和包装器类型互相转换。
+
+关于基本类型和包装类型更详细的内容，可以参照我之前写了另外一篇文章：
+
+[面试官：兄弟，说说基本类型和包装类型的区别吧](https://mp.weixin.qq.com/s/IoXT2D8eAG8UWK4j2Gem4A)
+
+### 37、什么是枚举？
+
+enum（枚举）是 Java 1.5 时引入的关键字，它表示一种特殊类型的类，默认继承自 java.lang.Enum。
+
+```java
+public enum PlayerType {
+    TENNIS,
+    FOOTBALL,
+    BASKETBALL
+}
+```
+
+enum 是用于创建枚举的关键字，枚举中的常量都是隐式 static 和 final 的。
+
+关于枚举更详细的内容，可以参照我之前写了另外一篇文章：
+
+[恕我直言，我怀疑你并不会用 Java 枚举](https://mp.weixin.qq.com/s/5QrbbHwo6snBA6gIKPIjPQ)
+
+### 38、什么是 Java 注解？
+
+注解是 Java 1.5 时引入的，同 class 和 interface 一样，也属于一种类型，注解提供了一系列数据用来装饰程序代码（类、方法、字段等），但是注解并不是所装饰代码的一部分，它对代码的运行效果没有直接影响（这句话怎么理解呢？），由编译器决定该执行哪些操作。
+
+关于注解更详细的内容，可以参照我之前写了另外一篇文章：
+
+[不吹牛逼，撸个注解有什么难的](https://mp.weixin.qq.com/s/TUMrwWitgb4mXmloiOKvAg)
+
+### 39、什么是 Java 反射？
+
+Java 反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有字段和方法；对于任意一个对象，都能够调用它的任意字段和方法；这种动态获取信息以及动态调用对象方法的功能称为 Java 反射机制。
+
+反射属于高级主题，在常规编程中应该避免使用，因为反射可以通过调用私有的构造方法来破坏设计模式，比如说单例模式。
+
+尽管不建议使用反射机制，但反射机制的存在至关重要，因为如果没有反射，我们将没有 Spring 之类的框架，甚至 Tomcat 之类的服务器。它们通过反射调用适当的方法并对类实例化，省去了很多麻烦。
+
+### 40、Java 中的组合指的什么？
+
+通过对象组合可以实现代码的重用，Java 组合是通过引用其他对象的引用来实现的，使用组合的好处就是我们可以控制其他对象对使用者的可见性，并且刻意重用我们需要的对象。
+
+### 41、与继承相比，组合有什么好处？
+
+- 任何父类的修改都可能会影响到子类，甚至我们没有使用父类的一些方法。举个例子，假如子类有一个方法 `test()`，而父类之前是没有的，但突然有人在不知情的情况下在父类插入了一个同名但签名不同的 `test()` 方法，那么就会出现编译错误。组合是不会遇到这个问题的，因为我们仅仅会使用我们需要的方法。
+
+这是父类追加的 `test()` 方法：
+
+```java
+public class Super {
+    public String test() {
+        System.out.println("super");
+        return null;
+    }
+}
+```
+
+原来子类的 `test()` 方法就出错了。
+
+![](http://www.itwanger.com/assets/images/2020/07/java-mianshiti-62-02.png)
+
+来个表格列举一下两者之间的优缺点：
+
+组 合 关 系 |继 承 关 系
+---|---
+优点：不破坏封装，整体类与局部类之间松耦合，彼此相对独立    |缺点：破坏封装，子类与父类之间紧密耦合，子类依赖于父类的实现，子类缺乏独立性
+优点：具有较好的可扩展性    |缺点：支持扩展，但是往往以增加系统结构的复杂度为代价
+优点：支持动态组合。在运行时，整体对象可以选择不同类型的局部对象    |缺点：不支持动态继承。在运行时，子类无法选择不同的父类
+优点：整体类可以对局部类进行包装，封装局部类的接口，提供新的接口    |缺点：子类不能改变父类的接口
+缺点：整体类不能自动获得和局部类同样的接口|  优点：子类能自动继承父类的接口
+缺点：创建整体类的对象时，需要创建所有局部类的对象|  优点：创建子类的对象时，无须创建父类的对象
+
+### 42、如何在 Java 中对自定义对象的集合进行排序？
+
+需要对自定义对象的类实现 Comparable 接口，重写 `compareTo(T obj)` 方法，该方法在排序的时候会被调用进行排序。
+
+关于 Comparable 和 Comparator 接口更详细的内容，可以参照我之前写了另外一篇文章：
+
+[一文彻底搞懂Java中的Comparable和Comparator](http://www.itwanger.com/java/2020/01/04/java-comparable-comparator.html)
+
+### 43、什么是内部类？
+
+我们可以在一个类中定义一个类，这个类被称为内部类。内部类可以访问外部类的所有变量和方法，内部类中不能有任何静态变量。
+
+### 44、什么是匿名内部类？
+
+没有名称的内部类称为匿名内部类，它通过单个语句进行定义和实例化，总是需要扩展一个类或者实现一个接口。
+
+由于匿名内部类没有名称，所以无法为匿名内部类定义构造方法。
+
+### 45、什么是 Java 中的 Classloader（类加载器）？
+
+当我们要访问任何类时，都需要通过 Java Classloader 将该类的字节码加在到内存当中，可以通过继承 ClassLoader 并重写 `loadClass(String name)` 方法来创建自定义的类加载器。
+
+### 46、有哪些不同的类加载器？
+
+- Bootstrap 类加载器，用来加在 JDK 的内部类，比如说 rt.jar。
+
+- Extensions 类加载器，它从 JDK 扩展目录（JAVA_HOME/lib/ext）中加载类。
+
+- System 类加载器，它从当前类路径加载类。
+
+### 47、什么是三元运算符？
+
+三元运算符是 if-then-else 语句的一个替换，示例如下：
+
+```java
+result = testStatement ? value1 : value2;
+```
+
+### 48、super 关键字有什么用？
+
+当在子类中重写了父类方法时，可以通过 super 关键字访问父类方法。
+
+也可以使用 super 关键字在子类构造方法中调用父类构造方法，它必须是构造方法中的第一条语句。
+
+```java
+public class SuperClass {
+
+    public SuperClass(){
+    }
+    
+    public SuperClass(int i){}
+    
+    public void test(){
+        System.out.println("父类的测试方法");
+    }
+}
+```
+
+来看子类中如何使用 super 关键字：
+
+```java
+public class ChildClass extends SuperClass {
+
+    public ChildClass(String str){
+        // 调用父类的构造方法
+        super();
+        
+        // 调用子类的 test 方法
+        test();
+        
+        // 使用 super 关键字调用父类的 test 方法
+        super.test();
+    }
+    
+    @Override
+    public void test(){
+        System.out.println("child class test method");
+    }
+}
+```
+
+### 49、什么是 break，什么是 continue？
+
+我们可以使用 break 关键字终止 for、while、do-while 循环；可以在 switch 语句中使用 break 退出 case 条件。
+
+我们可以使用 continue 关键字在 for、while、do-while 循环跳过当前迭代；甚至可以使用带有标签的 continue 语句来跳过最外层循环的当前迭代。
+
+### 50、什么是 this 关键字？
+
+this 关键字提供对当前对象的引用，主要用于确保使用了当前对象的变量，而不是具有相同名称的局部变量。
+
+```java
+//constructor
+public Point(int x, int y) {
+    this.x = x;
+    this.y = y;
+}
+```
+
+还可以使用 this 关键字在构造方法中调用其他构造方法：
+
+```java
+public Rectangle() {
+    this(0, 0, 0, 0);
+}
+public Rectangle(int width, int height) {
+    this(0, 0, width, height);
+}
+public Rectangle(int x, int y, int width, int height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+}
+```
+
+关于 this 关键字更详细的内容，可以参照我之前写了另外一篇文章：
+
+[我去，你竟然还不会用 this 关键字](https://mp.weixin.qq.com/s/MIX4srqeg7STzphhR6Gp5g)
+
+### 51、什么是默认的构造方法？
+
+一个类的无参构造方法被称为默认构造方法。当我们没有为一个类定义构造方法时，Java 编译器会自动为该类创建一个默认的无参构造方法。如果定义了其他构造方法，编译器就不会在为我们创建默认构造方法了。
+
+### 52、try 块可以没有 catch 吗？
+
+是的，可以直接使用 try-finally，而不需要 catch 捕获异常。
+
+### 53、什么是垃圾回收？
+
+垃圾回收（Garbage Collection，简称 GC）会查看堆内存，识别正在使用和未使用的对象，以及会自动删除未使用的对象，用来释放内存。
+
+### 54、什么是序列化和反序列化？
+
+我们可以把一个 Java 对象转化成一个数据流，这被称为序列化。一旦对象被转化为数据流后，就可以将其保存到文件或者通过网络套接字发送。
+
+如果一个对象实现了 Serializable 接口，就可以使用 `java.io.ObjectOutputStream` 将对象写入文件。
+
+将数据流再转化为 Java 对象被称为反序列化。
+
+### 55、如何通过命令提示符运行 jar 文件？
+
+可以通过 java 命令运行 jar 文件，但需要 jar 文件中有 main 方法。
+
+### 56、System 类有什么用？
+
+System 类是 Java 的一个核心类，比较常用的就是 `System.out.println()`。
+
+System 类是 final 的，因此我们不能通过继承来重写它的方法，System 类没有提供任何 public 的构造方法，因此无法实例化，它的所有方法都是 static 的。
+
+### 57、什么是 instanceof 关键字？
+
+我们可以使用 instanceof 关键字检查对象是否属于一个类。
+
+```java
+public static void main(String args[]){
+    Object str = new String("沉默王二");
+        
+    if(str instanceof String){
+        System.out.println("字符串值为：" + str);
+    }
+        
+    if(str instanceof Integer){
+        System.out.println("数字的值是：" + str);
+    }
+}
+```
+
+### 58、可以在 switch 中使用字符串吗？
+
+Java 7 改进的一个功能就是允许在 switch 语句中使用字符串。
+
+关于 switch 更详细的内容，可以参照我之前写了另外一篇文章：
+
+[我去，你写的 switch 语句也太老土了吧](https://mp.weixin.qq.com/s/1BDDLDSKDGwQAfIFMyySdg)
+
+### 59、Java 是按值传递还是按引用传递？
+
+可以很确定地说，Java 是按值传递的。
+
+关于这个问题，可以参照我之前写了另外一篇文章：
+
+[面试官：兄弟，说说Java到底是值传递还是引用传递](https://mp.weixin.qq.com/s/v0mXk7cQzUFq_y2xArMTPA)
+
+### 60、堆（heap）和栈（stack）有什么区别？
+
+- 堆内存被应用程序的所有部分使用，而栈内存仅由执行线程使用。
+- 当我们创建对象时，它始终存储在堆空间上；栈仅存储该对象的引用，栈内存还可以存储局部的基本类型数据变量。
+- 栈的内存管理方式是 LIFO（后进先出）形式，而堆的内存管理方式更复杂。
+
+### 61、Java 编译在 JDK 中，还是 JRE，还是 JVM 中？
+
+Java 编译器的任务是将 Java 源代码转换为字节码，可以通过 javac 命令执行，因此它在 JDK 中，JRE 中不需要它。
+
+### 62、下面这段程序输出什么？
+
+```java
+public class Test {
+
+    public static String toString(){
+        System.out.println("测试 toString 方法有没有被调用");
+        return "";
+    }
+    
+    public static void main(String args[]){
+        System.out.println(toString());
+    }
+}
+```
+
+这段代码无法编译通过，因为 `java.lang.Object` 中的 `toString()` 方法不是 static 的，它无法被 static 修饰的方法重写。
+
+那下面这段代码呢？
+
+```java
+public class Test {
+    public static String foo(){
+        System.out.println("测试 foo 方法有没有被调用");
+        return "";
+    }
+
+    public static void main(String args[]){
+        Test obj = null;
+        System.out.println(obj.foo());
+    }
+}
+```
+
+这段代码会输出 `测试 foo 方法有没有被调用`，没有出现 NullPointerException。为什么呢？
+
+命名 obj 为 null 啊，通过 obj 调用 `foo()` 方法的时候应该抛出 NullPointerException 异常才对啊！
+
+之所以没有抛出异常，是因为 Java 编译器对这段代码做出了优化，因为 `foo()` 方法是静态方法，所以 `obj.foo()` 会被优化为 `foo()`，所以就不会抛出异常了。
+
+来看一下这段代码的字节码就明白了：
+
+```java
+public class Test {
+    public Test() {
+    }
+
+    public static String foo() {
+        System.out.println("测试 foo 方法有没有被调用");
+        return "";
+    }
+
+    public static void main(String[] args) {
+        Test obj = null;
+        System.out.println(foo());
+    }
+}
+```
+
 
 ### 鸣谢
 
-说句实在话，这 31 道 Java 核心面试题在面试的过程中还是很常见的，值得好好复习一遍。关键是还有下一波，同样 31 道，望眼欲穿吧？
+说句实在话，这 62 道 Java 核心面试题在面试的过程中还是很常见的，值得好好复习一遍。
 
 好了，我亲爱的小伙伴们，能看到这里绝逼是最优秀的程序员，二哥必须伸出帅气的大拇指为你点个赞！
 
