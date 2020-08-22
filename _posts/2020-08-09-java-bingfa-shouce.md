@@ -13,7 +13,7 @@ tags:
 
 
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-01.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-01.png)
 
 嵩山少林寺位于河南省登封市，始建于北魏太和十九年，号称“天下第一名刹”。这意味着什么？阿里出品的嵩山版 Java 开发手册，是迄今为止最重量级的。
 
@@ -37,13 +37,13 @@ tags:
 
 ### 02、新增禁止任何歧视性用语的约定
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-02.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-02.png)
 
 虽然互联网越来越开放，但有些用语还是要注意一下（尽量和谐）。记得之前 MySQL 的一些关键字都被迫做了调整。
 
 ### 03、新增涉及敏感操作的情况下日志需要保存六个月的约定
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-03.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-03.png)
 
 涉及到法律的地方还是在开发的时候注意一下。
 
@@ -53,27 +53,27 @@ tags:
 
 [我去，脸皮厚啊，竟然使用==比较浮点数？](https://mp.weixin.qq.com/s/NcMTCXtmiByMHVZ6eqFxSg)
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-04.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-04.png)
 
 ### 05、修正 HashMap 关于 1024 个元素扩容的次数
 
 泰山版说是扩容 7 次。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-05.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-05.png)
 
 嵩山版修正为扩容 8 次。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-06.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-06.png)
 
 ### 06、修正架构分层规范与相关说明
 
 泰山版的应用分层如下图所示。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-07.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-07.png)
 
 嵩山版的应用分层修改为如下图所示。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-08.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-08.png)
 
 
 ### 07、最后
@@ -82,6 +82,6 @@ tags:
 
 微信搜索「**沉默王二**」回复「**手册**」就可以免费获取了，当然你也可以扫描下面的二维码后回复，赶紧赶紧。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-bingfa-shouce-09.png)
+![](http://www.itwanger.com/assets/images/2020/08/java-ali-shouce-09.png)
 
 最后，我衷心地祝福你，希望你能学有所成，to be better，奥利给！
