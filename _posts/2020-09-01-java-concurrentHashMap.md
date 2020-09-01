@@ -1,13 +1,13 @@
 ---
 layout: post
 category: java
-title: 科普，想成为厉害的 Java 后端程序员，你需要懂这 13 个知识点
+title: 阿里面试官经常问的 HashMap 和 ConcurrentHashMap，相信看完这篇没有面试官能再难住你。
 tagline: by 沉默王二
 tags: 
   - java
 ---
 
-阿里面试官经常问的 HashMap 和 ConcurrentHashMap，相信看完这篇没有面试官能再难住你。
+从源码的角度深入地分析了 ConcurrentHashMap 这个线程安全的 HashMap，希望能够给你一些帮助。
 
 <!--more-->
 
@@ -53,7 +53,7 @@ private static class SynchronizedMap<K,V>
 
 ConcurrentHashMap 一直在进化，Java 7 和 Java 8 就有很大的不同。Java 7 版本的 ConcurrentHashMap 是基于分段锁的，就是将内部分成不同的 Segment（段），每个段里面是 HashEntry 数组。
 
-![](http://www.itwanger.com/assets/images/2020/08/java-ConcurrentHashMap-01.png)
+![](http://www.itwanger.com/assets/images/2020/09/java-ConcurrentHashMap-01.png)
 
 来看一下 Segment：
 
@@ -104,7 +104,7 @@ static class Segment<K,V> extends ReentrantLock implements Serializable {
 
 底层结构和 Java 7 也有所不同，更接近 HashMap（数组+双向链表+红黑树）：
 
-![](http://www.itwanger.com/assets/images/2020/08/java-ConcurrentHashMap-02.png)
+![](http://www.itwanger.com/assets/images/2020/09/java-ConcurrentHashMap-02.png)
 
 来看一下新版 ConcurrentHashMap 定义的关键字段：
 
