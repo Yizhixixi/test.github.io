@@ -90,16 +90,6 @@ navs:
     target: _self
 
   -
-    href: /web.html
-    label: 前端
-    target: _self
-  
-  -
-    href: /share.html
-    label: 知识库
-    target: _self
-
-  -
     href: /about.html
     label: About
     target: _self
