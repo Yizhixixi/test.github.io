@@ -15,8 +15,8 @@ keywords: 沉默王二,Java,Java教程,程序人生,程序员,前端,Web,全栈
 encoding: "utf-8"
 favicon: favicon.ico 
 
-repository: qinggee/itwanger.github.io
-github_url: https://github.com/qinggee
+repository: itwanger/itwanger.github.io
+github_url: https://github.com/itwanger
 url: http://www.itwanger.com
 enforce_ssl: itwanger.com
 
