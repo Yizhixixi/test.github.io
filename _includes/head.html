@@ -17,25 +17,20 @@
     <!-- Third-Party CSS -->
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://www.itwanger.com/bower_components/octicons/octicons/octicons.css">
-    <link rel="stylesheet" href="http://favorites.ren/bower_components/hover/css/hover-min.css">
-    <link rel="stylesheet" href="http://favorites.ren/bower_components/primer-markdown/dist/user-content.min.css">
-    <link rel="stylesheet" href="http://favorites.ren/assets/css/syntax.css">
+    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
     
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="http://www.itwanger.com/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
 
     <!-- CSS set in page -->
     {% for css in page.css %}
-    <link rel="stylesheet" href="http://favorites.ren/assets/css/{{css}}">
-    {% endfor %}
-
-    <!-- CSS set in layout -->
-    {% for css in layout.css %}
-    <link rel="stylesheet" href="http://favorites.ren/assets/css/{{css}}">
+    <link rel="stylesheet" href="/assets/css/{{css}}">
     {% endfor %}
 
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
