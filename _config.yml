@@ -80,24 +80,23 @@ navs:
     target: _self
 
   -
-    href: /web.html
-    label: 前端
-    target: _self
-
-  -
     href: /life.html
     label: 程序人生
     target: _self
     
   -
-    href: /share.html
-    label: 知识库
-    target: _self
-
-
-  -
     href: /archives.html
     label: Archives
+    target: _self
+
+  -
+    href: /web.html
+    label: 前端
+    target: _self
+  
+  -
+    href: /share.html
+    label: 知识库
     target: _self
 
   -
