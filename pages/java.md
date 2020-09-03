@@ -3,9 +3,8 @@ layout: page
 title: Java 系列文章
 titlebar: java
 subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
-     <a href ="/java.html">更多 Java 精选课程 ， <font color="#EB9439">点我</font>查看！</a><br/><br/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href ="/assets/images/itwanger.jpg">微信搜索：<font color="#00FF00">沉默王二</font>，关注公众号后回复“黄家驹”进群交流。</a>
+     <a href ="/assets/images/itwanger.jpg">微信搜索：<font color="#00FF00">沉默王二</font>，回复“小白”获取二哥肝了七天七夜的《Java 小白从入门到成神》PDF。</a>
 menu: java
 css: ['blog-page.css']
 permalink: /java
