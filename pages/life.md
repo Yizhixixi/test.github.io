@@ -2,7 +2,7 @@
 layout: page
 title: 你的程序人生和我一样吗
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 微信搜索“沉默王二”，关注后回复“乔布斯”进群交流
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 微信搜索“沉默王二”，回复关键字“程序员”获取二哥肝了三天三夜的《程序员不可或缺的软技能》PDF
 menu: life
 css: ['blog-page.css']
 permalink: /life
@@ -18,7 +18,7 @@ permalink: /life
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-                        <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        <a class="posts-list-name bubble-float-left" href="{{ post.url }}">{{ post.title }}</a>
                         <span class='circle'></span>
                     </div>
                 </li>
