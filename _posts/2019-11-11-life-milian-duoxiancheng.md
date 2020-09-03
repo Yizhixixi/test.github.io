@@ -2,7 +2,7 @@
 lock: need
 layout: post
 category: life
-title: @程序员，别再迷恋多线程工作了
+title: 程序员，别再迷恋多线程工作了
 tagline: by 沉默王二
 tags: 
   - 程序员
