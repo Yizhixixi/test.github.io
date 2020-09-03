@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 你的程序人生和我一样吗
+title: 程序员也可以获得很精彩
 titlebar: life
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 微信搜索“沉默王二”，回复关键字“程序员”获取二哥肝了三天三夜的《程序员不可或缺的软技能》PDF
 menu: life
