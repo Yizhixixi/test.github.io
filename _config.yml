@@ -17,6 +17,9 @@ favicon: favicon.ico
 
 repository: itwanger/itwanger.github.io
 github_url: https://github.com/itwanger
+url: http://www.itwanger.com
+gitee_url: https://itwanger.gitee.io
+enforce_ssl: itwanger.com
 
 ## Gem
 plugins:
