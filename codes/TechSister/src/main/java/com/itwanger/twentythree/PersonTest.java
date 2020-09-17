@@ -8,6 +8,5 @@ import java.util.*;
 public class PersonTest {
     public static void main(String[] args) {
         Person person = new Person();
-        HashMap
     }
 }
