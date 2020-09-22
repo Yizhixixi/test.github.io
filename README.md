@@ -9,7 +9,7 @@
 
 
 <p align="center">
-<a href="https://github.com/itwanger/itwanger.github.io" target="_blank">
+<a href="http://itwanger.gitee.io" target="_blank">
 	<img src="http://itwanger.com/assets/images/favicon.jpg" width=""/>
 </a>
 </p>
