@@ -11,14 +11,13 @@ subtitle: 微信搜索「沉默王二」，回复 1024 有惊喜
 name: 沉默王二 
 email: 983436076@qq.com
 description: 本站为沉默王二的个人博客，内容涵盖有趣的Java后端技术，还有有益的程序人生。
-keywords: 沉默王二,Java,Java教程,程序人生,程序员,前端,Web,全栈
+keywords: 沉默王二,Java,Java教程,Java后端
 encoding: "utf-8"
 favicon: favicon.ico 
 
 repository: itwanger/itwanger.github.io
 github_url: https://github.com/itwanger
 url: http://www.itwanger.com
-gitee_url: https://itwanger.gitee.io
 enforce_ssl: itwanger.com
 
 ## Gem
