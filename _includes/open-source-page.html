@@ -1,5 +1,5 @@
-{% if site.github_url.public_repositories != null %}
-{% assign sorted_repos = (site.github_url.public_repositories | sort: 'stargazers_count') | reverse  %}
+{% if site.github.public_repositories != null %}
+{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
         <div class="container">
