@@ -1,7 +1,7 @@
 ---
 layout: post
 category: life
-title: （可能是）最后一次参加同学婚礼了
+title: 可能是最后一次参加同学婚礼了
 tagline: by 沉默王二
 tags: 
   - 程序员
