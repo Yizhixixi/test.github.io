@@ -26,13 +26,13 @@ tags:
 
 两个小时后，还真的找到了一份， GitHub 上标星 115k，内容还真的不错，来简单看一下目录。包括 Java 基础、Java 容器、Java 并发、Java 虚拟机和 Java IO，非常全面。
 
-![](http://www.itwanger.com/assets/images/2020/12/java-gitHub-01.png)
+![](http://www.itwanger.com/assets/images/2020/12/java-github-01.png)
 
 
-![](http://www.itwanger.com/assets/images/2020/12/java-gitHub-02.png)
+![](http://www.itwanger.com/assets/images/2020/12/java-github-02.png)
 
 
-![](http://www.itwanger.com/assets/images/2020/12/java-gitHub-03.png)
+![](http://www.itwanger.com/assets/images/2020/12/java-github-03.png)
 
 又花了三个小时把这份教程整理成 PDF 后，我发给了小伙伴，他连忙发私信给我说，“哥，对不起，对不起，是我不懂规矩，你也太用心了，这份教程的质量真的高，不服不行！”
 
