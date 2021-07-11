@@ -14,7 +14,7 @@ permalink: /link
 - [Java极客技术](http://www.justdojava.com) - Java 技术人的一片天地
 - [程序新视界](http://www.choupangxia.com) - 一个软技能、硬实力同时提升的平台。
 - [IT码农](https://tanqingbo.cn) - 一个专注于程序员成长的网站。
-- [程序员一站式导航](http://cxy521.com/) - 致力于一站式服务程序员工作、学习、娱乐导航网站。
+- [IT码农](http://cxy521.com) - 一个专注于程序员成长的网站。
 
 ## 推荐网站
 
