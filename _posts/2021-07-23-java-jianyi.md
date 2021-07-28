@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 字节取消大小周，该！
+title: 对中专生学习编程的一点建议
 tagline: by 沉默王二
 tags: 
   - java
