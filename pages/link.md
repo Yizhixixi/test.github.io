@@ -19,6 +19,7 @@ permalink: /link
 - [程序员一站式导航](http://cxy521.com/) - 致力于一站式服务程序员工作、学习、娱乐导航网站。
 - [一树一溪](https://www.bigspring.cn/) - MySQL 源码研究
 - [阿四的小站](http://blog.chenxp.cn/) - 读者阿四的博客网站
+- [程序员飞鸟的技术博客](https://zhengguibo.top) - 这是一个Java技术分享、吹水幽默的博客
 
 
 ## 个人链接
